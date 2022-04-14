@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+
+    <!-- Material-icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material-icon -->
+
+    <!-- 전페이지 공통 CSS -->
+    <link rel="stylesheet" href="assets/css/common/common.css">
+    <link rel="stylesheet" href="assets/css/common/button.css">
+    <link rel="stylesheet" href="assets/css/common/style.css">
+    <link rel="stylesheet" href="assets/css/scss/layout.css">
+    <!-- 전페이지 공통 CSS -->
+
+    <link rel="stylesheet" href="assets/css/scss/main.css">
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
+    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 -->
+
+    <script src="assets/js/lib/jquery.js"></script>
+    <script src="assets/js/layout/top.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                let scrollPos = $(window).scrollTop();
+                let headerHeight = $('header').height();
+
+                if (scrollPos > headerHeight) {
+                    $('header').addClass('scrolled')
+                } else {
+                    $('header').removeClass('scrolled');
+                }
+            })
+
+            $('#gnb_btn').click(function () {
+                if ($('#gnb_btn').hasClass('open')) {
+                    $(this).removeClass('open');
+                    $('body , html').css('overflow', 'auto');
+                    $('nav').css('top', '-100%');
+                } else {
+                    $(this).addClass('open')
+                    $('body , html').css('overflow', 'hidden');
+                    $('nav').css('top', 0);
+                }
+            })
+        })
+    </script>
+
+    <style>
+        .swiper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        .swiper-pagination {
+            top:50%;
+            transform: translateY(-50%);
+            width: auto;
+            display: inline;
+            right: 60px;
+            bottom:inherit;
+            left:inherit;
+            color:white;
+        }
+        .swiper-pagination span{display:block;}
+        .swiper-pagination span:first-child{font-size: 2rem;}
+
+        .main_visual_txt{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            text-align: center;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="on">
+            <div class="header_inner">
+                <h1 class="logo"><a href="#;"></a></h1>
+                <a href="#;" class="text_logo"><img src="assets/img/common/text_logo.png" alt="Txtlogo"></a>
+                <button id="gnb_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <div class="nav_inner">
+                        <ul class="gnb">
+                            <li><a href="#;">Who we are</a></li>
+                            <li><a href="#;">KSPM</a></li>
+                            <li><a href="#;">Work</a></li>
+                            <li><a href="#;">이바닥 카운셀링</a></li>
+                            <li><a href="#;">Contact</a></li>
+                            <li><a href="#;">Career</a></li>
+                        </ul>
+                        <ul class="nav_copy">
+                            <li>서울 금천구 가산동</li>
+                            <li><a href="#;">qudcks5078@naver.com</a></li>
+                            <li>Mon-Fri: 10:00 AM – 7:00 PM</li>
+                            <li><a href="#;">TEL : 010-6625-5078</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="main_visual" style="height:100vh; background-color:yellow;">
+                <div class="left_txt">
+                    <span>분야별 업계 경력 15년 이상</span>
+                    <span>프로젝트 전문가그룹</span>
+                    <span>K.ACELAB만의 방법론으로</span>
+                    <span>접근합니다.</span>
+                </div>
+                <div class="bottom_anchor">
+                    <ul>
+                        <li><a href="#;">
+                                <span>Smartical</span>
+                                디테일한 분석에서 도출
+                            </a></li>
+                        <li><a href="#;">
+                                <span>Flexible</span>
+                                유연성으로 완성하는 창의력
+                            </a></li>
+                        <li><a href="#;">
+                                <span>Considerate</span>
+                                고객 입장에서 생각하는 서비스
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper main_visual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/layout/visual_img01.jpg" alt="SpaceImg" />
+                            <div class="main_visual_txt">
+                                <p>20여년 전통의 오리지널 프로바이오틱스</p>
+                                <p>VSL#3 쇼핑몰 구축</p>
+                                <a href="#;" class="btn btn-white">프로젝트 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/layout/visual_img03.jpg" alt="SpaceImg" />
+                            <div class="main_visual_txt">
+                                <p>더 나은 미래를 위해</p>
+                                <p>For The Better Futer, 4TBF</p>
+                                <a href="#;" class="btn btn-white">프로젝트 보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/layout/visual_img02.jpg" alt="SpaceImg" />
+                            <div class="main_visual_txt">
+                                <p>창의적 기업 문화로의 시작</p>
+                                <p>코오롱 사내벤처 K-VENTURES</p>
+                                <a href="#;" class="btn btn-white">프로젝트 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+            </div>
+        </section>
+
+            <section class="sticky_section">
+                <div class="content1">
+                    <div class="content_bg" style="background-image:url('assets/img/layout/content_bg01.jpg')">
+                        <h3>Smartical</h3>
+                    </div>
+                    <div class="content_txt">
+                        <h3>디테일한 분석에서 도출</h3>
+                        <span></span>
+                        <p>
+                            기초와 기본이 없는 스마트는 있을 수 없습니다.<br>
+                            수많은 프로젝트의 경험을 바탕으로<br>
+                            목적에 맞는 디테일한 분석과 케이스랩만의 방법론을 통해<br>
+                            누군가가 모방하고 싶어하는<br>
+                            최상의 스마트한 프로젝트 결과물을 만들어 냅니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="content_bg" style="background-image:url('assets/img/layout/content_bg02.jpg')">
+                        <h3>Flexible</h3>
+                    </div>
+                    <div class="content_txt">
+                        <h3>유연성으로 완성하는 창의력</h3>
+                        <span></span>
+                        <p>
+                            화려하고 트렌드만 따르는 디자인은 오래가지 못합니다.<br>
+                            사용자가 편리하게 이용하고 공감할 수 있고,<br>
+                            비즈니스 연관성을 발견하고 확장성을 고려한 서비스 디자인을 통해<br>
+                            다양한 환경에서도 유연성 있게 완성되는<br>
+                            크리에이티브한 디자인을 추구합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="content_bg" style="background-image:url('assets/img/layout/content_bg03.jpg')">
+                        <h3>Considerate</h3>
+                    </div>
+                    <div class="content_txt">
+                        <h3>고객 입장에서 생각하는 서비스</h3>
+                        <span></span>
+                        <p>
+                            KACELAB에서 진행하는 모든 프로젝트와 운영은<br>
+                            나의 비즈니스라고 생각하고 임합니다.<br>
+                            프로젝트와 운영을 하다보면 사업 분야와 목적이 다르기 때문에<br>
+                            고객사마다 다양한 니즈가 있습니다.<br>
+                            한 번 맺은 인연을 중요하게 여기는 KACELAB은<br>
+                            작은 운영 하나라도 겸손하게 고객 입장에서 생각하는 서비스를 추구합니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+           
+        <footer>
+
+        </footer>
+
+        <div id="top_area">
+            <button class="material-icons" id="top_btn">north</button>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".main_visual", {
+            spaceBetween: 30,
+            autoPlay: true,
+            speed: 700,
+            effect: "fade",
+            pagination: {
+                type: 'fraction',
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap section {
+  height: 100%;
+}
+
+#wrap section .main_visual {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#wrap section .main_visual .left_txt {
+  position: absolute;
+  left: 60px;
+  top: 180px;
+  z-index: 50;
+  color: #fff;
+}
+
+#wrap section .main_visual .left_txt span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+#wrap section .main_visual .bottom_anchor {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 10px;
+  z-index: 50;
+}
+
+#wrap section .main_visual .bottom_anchor ul li {
+  display: inline-block;
+  padding: 0 2.5rem;
+}
+
+#wrap section .main_visual .bottom_anchor ul li a {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+#wrap section .main_visual .bottom_anchor ul li a span {
+  position: relative;
+  display: block;
+  font-size: 1rem;
+}
+
+#wrap section .main_visual .bottom_anchor ul li a span::after {
+  content: '┐';
+  padding-left: 10px;
+  clear: both;
+  display: inline-block;
+}
+
+#wrap section .main_visual .bottom_anchor ul li a:hover {
+  color: #00a8a1;
+}
+
+#wrap section .main_visual .swiper .swiper-wrapper .swiper-slide .main_visual_txt p {
+  font-size: 2rem;
+}
+
+#wrap section .main_visual .swiper .swiper-wrapper .swiper-slide .main_visual_txt a {
+  margin-top: 1.25rem;
+}
+
+#wrap section.sticky_section {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100%;
+}
+
+#wrap section.sticky_section div {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap section.sticky_section div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap section.sticky_section div .content_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#wrap section.sticky_section div .content_bg h3 {
+  color: #fff;
+  font-size: 6rem;
+  font-family: "NSG L";
+}
+
+#wrap section.sticky_section div .content_txt h3 {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#wrap section.sticky_section div .content_txt p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=main.css.map */

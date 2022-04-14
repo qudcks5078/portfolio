@@ -1,0 +1,8 @@
+﻿.btn {cursor:pointer; outline: none; display: inline-block; -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; cursor: pointer; padding:4px 16px;}
+.btn-default {cursor: default;}
+.btn.default-cursor {cursor: default;}
+
+.btn-blue {background-color:#4499F3; height:36px; line-height:36px; color:#fff; box-sizing:border-box; border-radius:5px;}
+.btn-gray {background-color:#f4f4f4; height:36px; line-height:36px; color:#333; box-sizing:border-box; border-radius:5px;}
+.btn-white {background-color:#fff; height:36px; line-height:36px; border-radius: 5px; color:rgba(0, 0, 0, 0.7);}
+.btn-disabled {opacity: 0.3;} 
