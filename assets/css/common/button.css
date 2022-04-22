@@ -4,5 +4,7 @@
 
 .btn-blue {background-color:#4499F3; height:36px; line-height:36px; color:#fff; box-sizing:border-box; border-radius:5px;}
 .btn-gray {background-color:#f4f4f4; height:36px; line-height:36px; color:#333; box-sizing:border-box; border-radius:5px;}
-.btn-white {background-color:#fff; height:36px; line-height:36px; border-radius: 5px; color:rgba(0, 0, 0, 0.7);}
+.btn-white {border:1px solid white; color:white !important; border-radius:60px; height:36px; line-height:36px; border-radius: 60px; color:rgba(0, 0, 0, 0.7);}
+
+.btn-underline {border-bottom:1px solid #fff; height:36px; line-height:36px; padding:0; color:rgba(255, 255, 255, 0.7);}
 .btn-disabled {opacity: 0.3;} 

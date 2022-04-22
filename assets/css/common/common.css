@@ -15,5 +15,3 @@ p {margin:0; padding:0;}
 a, span, p {word-break: break-all;}
 a, button, span, input, ul, li, div {-webkit-tap-highlight-color : transparent; }
 table {border-spacing: 0; border-collapse:collapse;}
-
-img{display:block;}

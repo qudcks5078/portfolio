@@ -24,28 +24,13 @@
 }
 
 @font-face {
-	font-family: 'OS B'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/OpenSans-Bold.ttf'); /*폰트 파일 주소*/
+	font-family: 'NSF B'; /* 폰트 패밀리 이름 주기*/
+	src: url('../../font/NotoSerif-Bold.ttf'); /*폰트 파일 주소*/
 }
 
 @font-face {
-	font-family: 'OS L'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/OpenSans-Light.ttf'); /*폰트 파일 주소*/
-}
-
-@font-face {
-	font-family: 'OS EB'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/OpenSans-ExtraBold.ttf'); /*폰트 파일 주소*/
-}
-
-@font-face {
-	font-family: 'OS R'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/OpenSans-Regular.ttf'); /*폰트 파일 주소*/
-}
-
-@font-face {
-	font-family: 'OS SB'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/OpenSans-SemiBold.ttf'); /*폰트 파일 주소*/
+	font-family: 'NSF R'; /* 폰트 패밀리 이름 주기*/
+	src: url('../../font/NotoSerif-Regular.ttf'); /*폰트 파일 주소*/
 }
 
 @font-face {

@@ -25,9 +25,8 @@ header {
 
 header .header_inner {
   position: relative;
-  width: calc(100% - 120px);
   margin: 0 auto;
-  padding: 16px 20px;
+  padding: 20px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -56,17 +55,17 @@ header .header_inner:after {
 }
 
 header .header_inner .text_logo {
+  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: block;
 }
 
 header .header_inner #gnb_btn {
   position: absolute;
-  right: 20px;
+  right: 60px;
   width: 45px;
   height: 50px;
   z-index: 1000;
@@ -150,7 +149,7 @@ header .header_inner nav .nav_inner .gnb li a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 16px;
+  bottom: 20px;
   width: 1px;
   height: 20px;
   -webkit-transition: all 0.5s;
@@ -173,12 +172,40 @@ header .header_inner nav .nav_inner .nav_copy li {
   margin: 0 5px;
 }
 
+footer .footer_wrap {
+  background-color: #252525;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer .footer_wrap .address {
+  color: #bbb;
+}
+
+footer .footer_wrap .address ul li {
+  display: inline-block;
+}
+
+footer .footer_wrap .address ul li a {
+  color: #bbb;
+}
+
+footer .footer_wrap .copyright {
+  color: #777;
+  margin-top: 20px;
+}
+
 header.scrolled {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: white;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 #top_area {
@@ -189,6 +216,7 @@ header.scrolled {
 }
 
 #top_area button {
+  display: block;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -197,5 +225,16 @@ header.scrolled {
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
+  margin-top: 10px;
+}
+
+#top_area button:hover {
+  background-color: black !important;
+  color: #fff;
+}
+
+#top_area #send_btn {
+  background-color: #00a8a1;
+  color: #fff;
 }
 /*# sourceMappingURL=layout.css.map */
