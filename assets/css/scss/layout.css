@@ -48,6 +48,17 @@ header .header_inner .logo a {
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  header .header_inner .logo {
+    width: 30px;
+    height: 30px;
+  }
+  header .header_inner .logo a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 header .header_inner:after {
   content: '';
   clear: both;
@@ -87,10 +98,26 @@ header .header_inner #gnb_btn span:nth-child(1) {
 
 header .header_inner #gnb_btn span:nth-child(2) {
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 header .header_inner #gnb_btn span:nth-child(3) {
   bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  header .header_inner #gnb_btn {
+    width: 30px;
+    height: 30px;
+    right: 6%;
+  }
+  header .header_inner #gnb_btn span:nth-child(1) {
+    top: 5px;
+  }
+  header .header_inner #gnb_btn span:nth-child(3) {
+    bottom: 5px;
+  }
 }
 
 header .header_inner #gnb_btn.open span:nth-child(1) {
@@ -172,6 +199,12 @@ header .header_inner nav .nav_inner .nav_copy li {
   margin: 0 5px;
 }
 
+@media (max-width: 1024px) {
+  header .header_inner {
+    padding: 15px 6%;
+  }
+}
+
 footer .footer_wrap {
   background-color: #252525;
   text-align: center;
@@ -236,5 +269,12 @@ header.scrolled {
 #top_area #send_btn {
   background-color: #00a8a1;
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  #top_area {
+    right: 4%;
+    bottom: 25px;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

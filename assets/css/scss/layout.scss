@@ -48,7 +48,16 @@ header {
                 background-position: center;
                 background-size: cover;
             }
-
+        }
+        @media (max-width:1024px){
+            .logo{
+                width:30px;
+                height:30px;
+                a{
+                    width:30px;
+                    height:30px;
+                }
+            }
         }
 
         &:after {
@@ -58,7 +67,7 @@ header {
         }
 
         .text_logo {
-            display:none;
+            display: none;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -86,12 +95,30 @@ header {
 
                 &:nth-child(2) {
                     top: 50%;
+                    transform: translateY(-50%);
                 }
 
                 &:nth-child(3) {
                     bottom: 10px;
                 }
             }
+        }
+
+        @media (max-width:1024px){
+            #gnb_btn{
+                width:30px;
+                height:30px;
+                right:6%;
+                span{
+                &:nth-child(1) {
+                    top: 5px;
+                }
+
+                &:nth-child(3) {
+                    bottom: 5px;
+                }
+            }
+        }
         }
 
         #gnb_btn.open {
@@ -175,27 +202,36 @@ header {
             }
         }
     }
+@media (max-width:1024px){
+    .header_inner{
+        padding:15px 6%;
+    }
+}
 }
 
-footer{
-    .footer_wrap{
-        background-color:#252525;
+footer {
+    .footer_wrap {
+        background-color: #252525;
         text-align: center;
-        padding:40px 0;
-        .address{
-            color:#bbb;
-            ul{
-                li{
-                    display:inline-block;
-                    a{
-                        color:#bbb;
+        padding: 40px 0;
+
+        .address {
+            color: #bbb;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        color: #bbb;
                     }
                 }
             }
         }
-        .copyright{
-            color:#777;
-            margin-top:20px;
+
+        .copyright {
+            color: #777;
+            margin-top: 20px;
         }
     }
 }
@@ -206,32 +242,46 @@ header.scrolled {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
 }
 
-.stop-scrolling{
-    height:100%;
-    overflow:hidden;
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 // 탑버튼
 
-#top_area{
+#top_area {
     position: fixed;
-    right:60px;
-    bottom:60px;
+    right: 60px;
+    bottom: 60px;
     z-index: 100;
-    button{
-        display:block;
-        width:40px;
-        height:40px;
-        line-height:40px;
-        background-color:#fff;
-        font-size:1.6rem;
+
+    button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        font-size: 1.6rem;
         border-radius: 50%;
         vertical-align: middle;
         text-align: center;
-        margin-top:10px;
-        &:hover{background-color:black !important; color:#fff;}
+        margin-top: 10px;
+
+        &:hover {
+            background-color: black !important;
+            color: #fff;
+        }
     }
-    #send_btn{
-        background-color:$mainColor; color:#fff;
+
+    #send_btn {
+        background-color: $mainColor;
+        color: #fff;
+    }
+}
+
+@media (max-width:1024px) {
+    #top_area {
+        right: 4%;
+        bottom: 25px;
     }
 }
