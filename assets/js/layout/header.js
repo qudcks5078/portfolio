@@ -1,14 +1,21 @@
-$(document).ready(function(){
+$(document).ready(function () {
+
+    let WindowWidth = $(window).width();
 
     // GNB
     $('#gnb_btn').click(function () {
+        let navH = $('.nav_inner').height();
         if ($('#gnb_btn').hasClass('open')) {
             $(this).removeClass('open');
-            $('nav').css('top', '-100%');
+            $('nav').css({
+                'top': '-1000%',
+            });
             $('html').removeClass('stop-scrolling');
         } else {
             $(this).addClass('open')
-            $('nav').css('top', 0);
+            $('nav').css({
+                'top': 0,
+            });
             $('html').addClass('stop-scrolling');
         }
     })
@@ -20,11 +27,12 @@ $(document).ready(function(){
 
         if (scrollPos > headerHeight) {
             $('header').addClass('scrolled')
-            $('.text_logo').fadeIn(500);
+            if(WindowWidth > 768){
+            $('.text_logo').css({'opcaity':'1'});
+        }
         } else {
             $('header').removeClass('scrolled');
-            $('.text_logo').hide();
-            
+            $('.text_logo').css({'opcaity':'0'});
         }
     })
 })

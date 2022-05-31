@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.form_section .contact_wrap {
+  text-align: center;
+}
+
+.form_section .contact_wrap .contact_bg {
+  padding: 150px 0;
+  background-image: url(../../img/layout/contact/contact_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt h2 {
+  position: relative;
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt h2::after {
+  content: '';
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: #00a8a1;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt .txt_desc div {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt .txt_desc div:nth-child(1) {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_txt .txt_desc div span {
+  color: #00a8a1;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form {
+  text-align: left;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg {
+  width: 840px;
+  margin: 0 auto;
+  padding: 60px;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  background: white;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dt {
+  padding: 50px 0 10px 0;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd input {
+  width: 100%;
+  padding: 20px 16px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li {
+  margin-right: 8px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li input[type="checkbox"] {
+  display: none;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label {
+  display: table;
+  width: 110px;
+  height: 68px;
+  border: 1px solid #d3dadb;
+  background: #f6f6f6;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li :checked + label {
+  background: #00a8a1;
+  color: white;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div {
+  width: 50%;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li {
+  margin-top: 10px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li:nth-child(1) {
+  margin-top: 0;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea {
+  height: 100%;
+  border: 1px solid #d3dadb;
+  background: #f6f6f6;
+  margin-left: 20px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .privacy_statement_box {
+  margin-top: 20px;
+  border: 1px solid #d3dadb;
+  padding: 20px 16px;
+  height: 150px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box input {
+  display: none;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box label {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #d3dadb;
+  border-radius: 30px;
+  padding: 10px 16px 10px 50px;
+  cursor: pointer;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box label::before {
+  content: '∨';
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #d3dadb;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box :checked + label {
+  color: #00a8a1;
+  border: 1px solid #00a8a1;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box :checked + label::before {
+  border: 1px solid #00a8a1;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .submit_area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .submit_area button {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 60px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  background: #c9c9c9;
+}
+
+.form_section .contact_wrap .contact_bg .contact_form .form_bg form .submit_area button:nth-child(1) {
+  background: #00a8a1;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form_section .contact_wrap {
+    text-align: center;
+  }
+  .form_section .contact_wrap .contact_bg {
+    padding: 75px 5%;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form {
+    text-align: left;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dt {
+    padding: 25px 0 10px 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd input {
+    width: 100%;
+    padding: 20px 16px;
+    height: 40px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li:nth-child(1), .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li:nth-child(2) {
+    margin-top: 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label {
+    width: 100%;
+    height: 40px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label span br {
+    display: none;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div {
+    width: 50%;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input {
+    width: calc(100% - 10px);
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea {
+    margin: 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 250px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form .submit_area button {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form_section .contact_wrap {
+    text-align: center;
+  }
+  .form_section .contact_wrap .contact_bg {
+    padding: 75px 15px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_txt h2 {
+    font-size: 28px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_txt h2::after {
+    width: 40px;
+    height: 2px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_txt .txt_desc div {
+    font-size: 14px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_txt .txt_desc div:nth-child(1) {
+    font-size: 18px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg {
+    width: 100%;
+    padding: 30px 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dt {
+    padding: 30px 0 10px 0;
+    font-size: 14px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd input {
+    width: 100%;
+    height: 34px;
+    padding: 0 8px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li {
+    width: calc(50% - 10px);
+    margin: 10px 10px 0 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li:nth-child(1), .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li:nth-child(2) {
+    margin-top: 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label {
+    width: 100%;
+    height: 34px;
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > ul li label span br {
+    display: none;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div {
+    width: 50%;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li {
+    margin-top: 10px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input {
+    width: calc(100% - 10px);
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div ul li input::placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea {
+    height: 210px;
+    margin-left: 0;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form dl dd > .request_box div textarea::placeholder {
+    font-size: 12px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form .privacy_statement_box {
+    padding: 10px 8px;
+    height: 100px;
+    font-size: 14px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form .agree_box label {
+    font-size: 14px;
+  }
+  .form_section .contact_wrap .contact_bg .contact_form .form_bg form .submit_area button {
+    width: 120px;
+    height: 34px;
+    border-radius: 60px;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

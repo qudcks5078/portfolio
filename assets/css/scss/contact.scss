@@ -1,0 +1,377 @@
+@import './variable/variable.scss';
+
+.form_section{
+    .contact_wrap{
+        text-align: center;
+        .contact_bg{
+            padding: 150px 0;
+            background-image: url(../../img/layout/contact/contact_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            .contact_txt{
+                color:white;
+                margin-bottom: 40px;
+                h2{
+                    position: relative;
+                    font-size: 40px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    &::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                        position: absolute;
+                        left:50%; bottom:0;
+                        transform: translateX(-50%);
+                        width: 80px;
+                        height: 2px;
+                        background-color:$mainColor;
+                    }
+                }
+                .txt_desc{
+                    div{
+                        position: relative;
+                        top:30px;
+                        opacity: 0;
+                        font-size: 18px;
+                        line-height: 1.6;
+                        &:nth-child(1){
+                            font-size: 24px;
+                            padding-bottom: 20px;
+                        }
+                        span{
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+
+            .contact_form{
+                text-align: left;
+                .form_bg{
+                    width: 840px;
+                    margin: 0 auto;
+                    padding: 60px;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, .4);
+                    background: white;
+                    form{
+                        dl{
+                            dt{
+                                padding: 50px 0 10px 0;
+                            }
+                            dd{
+                                input{
+                                    width:100%;
+                                    padding: 20px 16px;
+                                }
+                                > ul{
+                                    display: flex;
+                                    // flex-wrap: wrap;
+                                    li{
+                                        margin-right:8px;
+                                        input[type="checkbox"]{
+                                            display:none;
+                                        }
+                                        label{
+                                            display: table;
+                                            width:110px;
+                                            height: 68px;
+                                            border: 1px solid #d3dadb;
+                                            background: #f6f6f6;
+                                            border-radius: 5px;
+                                            text-align: center;
+                                            cursor: pointer;
+                                                span{
+                                                    display: table-cell;
+                                                    vertical-align: middle;
+                                                }
+                                        }
+                                        :checked+label{
+                                            background: $mainColor;
+                                            color:white;
+                                        }
+                                    }
+                                }
+                                > .request_box{
+                                    width:100%;
+                                    display:flex;
+                                    div{
+                                        width:50%;
+                                        ul{
+                                            li{
+                                                margin-top:10px;
+                                                &:nth-child(1){
+                                                    margin-top:0;
+                                                }
+                                                input{}
+                                            }
+                                        }
+                                        textarea{
+                                            height:100%;
+                                            border: 1px solid #d3dadb;
+                                            background: #f6f6f6;
+                                            margin-left: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .privacy_statement_box{
+                            margin-top: 20px;
+                            border: 1px solid #d3dadb;
+                            padding: 20px 16px;
+                            height: 150px;
+                            border-radius: 5px;
+                            box-sizing: border-box;
+                            overflow-y: scroll;
+                        }
+                        .agree_box{
+                            margin-top: 20px;
+                            text-align: center;
+                            input{
+                                display:none;
+                            }
+                            label{
+                                position:relative;
+                                display:inline-block;
+                                border:1px solid #d3dadb;
+                                border-radius: 30px;
+                                padding: 10px 16px 10px 50px;
+                                cursor: pointer;
+                                &::before{
+                                    content: '∨';
+                                    position: absolute;
+                                    left:16px;
+                                    width:24px;
+                                    height:24px;
+                                    border-radius: 50%;
+                                    border: 1px solid #d3dadb;
+                                }
+                            }
+                            :checked+label{
+                                color: $mainColor;
+                                border:1px solid $mainColor;
+                                &::before{
+                                    border:1px solid $mainColor;
+                                }
+                            }
+                        }
+                        .submit_area{
+                            text-align: center;
+                            margin-top:40px;
+                            button{
+                                display: inline-block;
+                                width: 240px;
+                                height: 60px;
+                                margin: 0 10px;
+                                border-radius: 60px;
+                                font-size: 18px;
+                                color: #fff;
+                                font-weight: normal;
+                                background: #c9c9c9;
+                                &:nth-child(1){
+                                    background:$mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .form_section{
+    .contact_wrap{
+        text-align: center;
+        .contact_bg{
+            padding: 75px 5%;
+            .contact_form{
+                text-align: left;
+                .form_bg{
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 30px;
+                    form{
+                        dl{
+                            dt{
+                                padding: 25px 0 10px 0;
+                            }
+                            dd{
+                                input{
+                                    width:100%;
+                                    padding: 20px 16px;
+                                    height:40px;
+                                }
+                                > ul{
+                                    flex-wrap: wrap;
+                                    li{
+                                        width:calc(50% - 10px);
+                                        margin-right: 10px;
+                                        margin-top:10px;
+                                        &:nth-child(1),
+                                        &:nth-child(2){
+                                            margin-top:0;
+                                        }
+                                        label{
+                                            width:100%;
+                                            height: 40px;
+                                                span{
+                                                    br{
+                                                        display:none;
+                                                    }
+                                                }
+                                        }
+                                    }
+                                }
+                                > .request_box{
+                                    div{
+                                        width:50%;
+                                        ul{
+                                            li{
+                                                input{
+                                                    width:calc(100% - 10px);
+                                                }
+                                            }
+                                        }
+                                        textarea{
+                                            margin:0;
+                                            padding:10px;
+                                            box-sizing: border-box;
+                                            height: 250px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .submit_area{
+                            button{
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@include mobile{
+    .form_section{
+        .contact_wrap{
+            text-align: center;
+            .contact_bg{
+                padding: 75px 15px;
+                .contact_txt{
+                    h2{
+                        font-size: 28px;
+                        &::after{
+                            width: 40px;
+                            height: 2px;
+                        }
+                    }
+                    .txt_desc{
+                        div{
+                            font-size: 14px;
+                            &:nth-child(1){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+    
+                .contact_form{
+                    .form_bg{
+                        width: 100%;
+                        padding: 30px 15px;
+                        box-sizing: border-box;
+                        form{
+                            dl{
+                                dt{
+                                    padding: 30px 0 10px 0;
+                                    font-size: 14px;
+                                }
+                                dd{
+                                    input{
+                                        width:100%;
+                                        height: 34px;
+                                        padding:0 8px;
+                                    }
+                                    > ul{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        li{
+                                            width:calc(50% - 10px);
+                                            margin:10px 10px 0 0;
+                                            &:nth-child(1),
+                                            &:nth-child(2){
+                                                margin-top: 0;;
+                                            }
+                                            label{
+                                                width:100%;
+                                                height: 34px;
+                                                font-size: 12px;
+                                                    span{
+                                                        br{
+                                                            display:none;
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                    }
+                                    > .request_box{
+                                        div{
+                                            width:50%;
+                                            ul{
+                                                li{
+                                                    margin-top:10px;
+                                                    &:nth-child(1){
+                                                        margin-top:0;
+                                                    }
+                                                    input{
+                                                        width: calc(100% - 10px);
+                                                        &::placeholder{
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            textarea{
+                                                height: 210px;
+                                                margin-left: 0;
+                                                &::placeholder{
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .privacy_statement_box{
+                                padding: 10px 8px;
+                                height: 100px;
+                                font-size: 14px;
+                            }
+                            .agree_box{
+                                label{
+                                    font-size: 14px;
+                                }
+                            }
+                            .submit_area{
+                                button{
+                                    width: 120px;
+                                    height: 34px;
+                                    border-radius: 60px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

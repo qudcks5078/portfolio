@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- 전페이지 공통 CSS -->
+    <link rel="stylesheet" href="assets/css/common/common.css">
+    <link rel="stylesheet" href="assets/css/common/button.css">
+    <link rel="stylesheet" href="assets/css/common/style.css">
+    <link rel="stylesheet" href="assets/css/scss/layout.css">
+    <!-- 전페이지 공통 CSS -->
+
+    <link rel="stylesheet" href="assets/css/scss/contact.css">
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
+    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 -->
+
+    <!-- Material-icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material-icon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="assets/js/lib/jquery.js"></script>
+    <script src="assets/js/layout/header.js"></script>
+    <script src="assets/js/layout/top.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="on">
+            <div class="header_inner">
+                <h1 class="logo"><a href="#;"></a></h1>
+                <a href="#;" class="text_logo"><img src="assets/img/common/text_logo.png" alt="Txtlogo"></a>
+                <button id="gnb_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <div class="nav_inner">
+                        <ul class="gnb">
+                            <li><a href="#;">Who we are</a></li>
+                            <li><a href="#;">KSPM</a></li>
+                            <li><a href="#;">Work</a></li>
+                            <li><a href="#;">이바닥 카운셀링</a></li>
+                            <li><a href="#;">Contact</a></li>
+                            <li><a href="#;">Career</a></li>
+                        </ul>
+                        <ul class="nav_copy">
+                            <li>서울 금천구 가산동</li>
+                            <li><a href="#;">qudcks5078@naver.com</a></li>
+                            <li>Mon-Fri: 10:00 AM – 7:00 PM</li>
+                            <li><a href="#;">TEL : 010-6625-5078</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="form_section">
+            <div class="contact_wrap">
+                <div class="contact_bg">
+                    <div class="contact_txt">
+                        <h2>Request Projects & Operation</h2>
+                        <div class="txt_desc">
+                            <div>고객 비즈니스의 완성이<br class="mobile_render"/> 케이스랩 프로젝트 GOAL입니다.</div>
+                            <div>프로젝트 문의 및 견적 의뢰 시<br class="mobile_render"/> 신속하게 답변드리겠습니다.</div>
+                            <div>직접 상담이 필요한 경우<br class="mobile_render"/> <span>qudcks5078@naver.com</span>으로 문의 주십시오.</div>
+                        </div>
+                    </div>
+
+                    <div class="contact_form">
+                        <div class="form_bg">
+                            <form action="">
+                                <input type="hidden">
+                                <dl>
+                                    <dt>프로젝트명</dt>
+                                    <dd>
+                                        <input type="text" placeholder="프로젝트명을 입력해 주세요.">
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>프로젝트 분야 (복수 선택 가능)</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="pchk01">
+                                                <label for="pchk01">
+                                                    <span>
+                                                        브랜드 <br>웹사이트
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk02">
+                                                <label for="pchk02">
+                                                    <span>
+                                                        기업 <br>웹사이트
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk03">
+                                                <label for="pchk03">
+                                                    <span>
+                                                        병원 의원 <br>웹사이트
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk04">
+                                                <label for="pchk04">
+                                                    <span>
+                                                        분양관련 <br>웹사이트
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk05">
+                                                <label for="pchk05">
+                                                    <span>
+                                                        쇼핑몰
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk06">
+                                                <label for="pchk06">
+                                                    <span>
+                                                        금융
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="pchk07">
+                                                <label for="pchk07">
+                                                    <span>
+                                                        기타
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>의뢰 범위 (복수 선택 가능)</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="rchk01">
+                                                <label for="rchk01">
+                                                    <span>
+                                                        신규 구축
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rchk02">
+                                                <label for="rchk02">
+                                                    <span>
+                                                        리뉴얼<br>개편
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rchk03">
+                                                <label for="rchk03">
+                                                    <span>
+                                                        부분리뉴얼<br>(부분개편)
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rchk04">
+                                                <label for="rchk04">
+                                                    <span>
+                                                        SNS, 쇼핑몰<br>컨텐츠 디자인
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rchk05">
+                                                <label for="rchk05">
+                                                    <span>
+                                                        운영<br>유지보수
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="rchk06">
+                                                <label for="rchk06">
+                                                    <span>
+                                                        기타
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>프로젝트 의뢰정보</dt>
+                                    <dd>
+                                        <div class="request_box">
+                                            <div>
+                                                <ul>
+                                                    <li><input type="text" placeholder="- 성함"></li>
+                                                    <li><input type="text" placeholder="- 소속업체"></li>
+                                                    <li><input type="text" placeholder="- 직위"></li>
+                                                    <li><input type="text" placeholder="- 연락처"></li>
+                                                    <li><input type="email" placeholder="- 이메일"></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="프로젝트와 관련된 내용을 간략하게 설명해주세요."></textarea>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="privacy_statement_box">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut magni possimus dolor vel repellat, facere temporibus ex, autem illum assumenda at fugiat unde excepturi molestias nostrum aperiam quod, eum quae sapiente. Eaque magnam ea, voluptatum libero blanditiis fugit vel laboriosam praesentium corporis incidunt consectetur voluptatibus delectus saepe, reiciendis sunt harum unde quo facere expedita? Possimus, sunt, soluta veritatis ullam laudantium assumenda nobis amet eveniet excepturi saepe iure hic error ipsam tempore vitae adipisci quod eius consectetur? Nostrum, vitae! Fugiat, facilis.
+                                </div>
+                                <div class="agree_box">
+                                    <input type="checkbox" id="agree_btn">
+                                    <label for="agree_btn">개인정보취급방침에 동의합니다.</label>
+                                </div>
+                                <div class="submit_area">
+                                    <button id="submit_btn">등록</button>
+                                    <button id="cancle_btn">취소</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="address">
+                    <ul>
+                        <li>사업자등록번호 : 679-01-01646</li>
+                        <li>서울 강남구 삼성로 763,<br class="mobile_render" /> 3층 301호 (청담동, 금탁프라자)</li>
+                        <li><a href="#;">qudcks5078@naver.com</a></li>
+                        <li>Mon-Fri : 09:00 AM – 6:00 PM</li>
+                        <li><a href="#;">TEL : 02-3442-2003</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    © Copyright 2022 Lsj1993 All Rights Reserved
+                </div>
+            </div>
+        </footer>
+
+        <div id="top_area">
+            <button class="material-icons" id="send_btn">contact_support</button>
+            <button class="material-icons" id="top_btn">north</button>
+        </div>
+
+        <div id="live_chat">
+            <a id="chat_close" class="material-icons">close</a>
+            <div class="chat_wrap">
+                <ul>
+                    <li class="you on">
+                        <div>
+                            <p class="msg">문의사항을 남겨주세요</p>
+                            <span class="time">
+                                <script>
+                                    var date = new Date();
+                                    var hh = date.getHours();
+                                    var mm = date.getMinutes();
+                                    var apm = hh > 12 ? "오후" : "오전";
+                                    var ct = apm + " " + hh + ":" + mm + "";
+                                    document.write(ct);
+                                </script>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="submit_chat">
+                <input type="text" id="chat_input" class="me" placeholder=" 메시지를 입력해주세요" />
+                <button id="chat_submit">확인</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/layout/contact.js"></script>
+    <script src="assets/js/layout/chat.js"></script>
+</body>
+
+</html>

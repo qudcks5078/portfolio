@@ -402,8 +402,22 @@ hr.white {background-color:#fff; }
 .shadow0{box-shadow:none;}
 .clearfix:after{content: ''; display:block; clear:both;}
 
-@media(max-width:699px) {
+@media(min-width:768px){
+	.mobile_render{display:none;}
+}
+
+@media(min-width:768px) and (max-width:1023px){
+	.tablet_render{display:block;}
+}
+
+@media(min-width:1024px){
+	.tablet_render{display:none;}
+}
+
+@media(max-width:767px) {
 	.d-m-standard {width:90%; margin-left:5%; margin-right:5%;}
 	.d-p-standard {width:90%; padding-left:5%; padding-right:5%;}
 	.d-w-half {width:50%; padding-left:5%; padding-right:5%; display:inline-block;}
+	.mobile_render{display:block;}
+	.tablet_render{display:none;}
 }
