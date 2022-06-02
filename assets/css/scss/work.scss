@@ -1,0 +1,182 @@
+@import './variable/variable.scss';
+
+.work_section{
+    background-color:$subColor;
+    padding-top: 80px;
+    .work_wrap{
+        .work_txt{
+            padding:100px 60px;
+            span{
+                color:$mainColor;
+                padding-bottom:30px;
+                font-size: 20px;
+            }
+            .txt_desc{
+                color:white;
+                font-size: 34px;
+                >div{
+                    position: relative;
+                    top:30px;
+                    opacity: 0;
+                }
+            }
+        }
+
+        .work_content{
+            >div{
+                ul{
+                    display:flex;
+                    flex-wrap: wrap;
+                    li{
+                        width:33.333%;
+                        flex-wrap: wrap;
+                        perspective: 2000;
+                        .work_box{
+                            opacity: 0;
+                            transition: all 1s ease, background-color 0.35s cubic-bezier(.65, 0, .35, 1);
+                            transform: rotateX(-45deg) translateY(120px);
+                            opacity:0;
+                            .work_con{
+                                .work_pos{
+                                    position: relative;
+                                    display: block;
+                                    overflow: hidden;
+                                    &:hover{
+                                        img{
+                                            transform: scale(1.1);
+                                        }
+                                        .work_desc{
+                                            background:rgba(0, 0, 0, 0);
+                                        }
+                                    }
+                                    img{
+                                        width:100%;
+                                        display: block;
+                                        transition: transform 0.5s;
+                                    }
+                                    .work_desc{
+                                        position: absolute;
+                                        top:0; left: 0; right:0; bottom:0;
+                                        padding:0 20px;
+                                        background:rgba(0, 0, 0, .4);
+                                        transition: background 0.5s;
+                                        box-sizing: border-box;
+
+                                        .desc_pos{
+                                            position: absolute;
+                                            bottom:30px;
+                                            // transform: translateY(-50%);
+                                        .work_title{
+                                            display:block;
+                                            font-size: 20px;
+                                            color: white;
+                                            padding-bottom: 10px;
+                                        }
+                                        .view_project_btn{
+                                            color:white;
+                                            font-size: 12px;
+                                            border-bottom:1px solid white;
+                                        }
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .work_section{
+        background-color:$subColor;
+        padding-top: 40px;
+        .work_wrap{
+            .work_txt{
+                padding:50px 30px;
+                span{
+                    font-size: 16px;
+                }
+                .txt_desc{
+                    font-size: 20px;
+
+                }
+            }
+    
+            .work_content{
+                >div{
+                    ul{
+                        display:block;
+                        li{
+                            width:100%;
+                            flex-wrap: wrap;
+                            .work_box{
+                                .work_con{
+                                    .work_pos{
+                                        .work_desc{
+                                            .desc_pos{
+                                                position: absolute;
+                                                bottom:50%; left: 50%;
+                                                transform: translate(-50%, 50%);
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@include mobile{
+    .work_section{
+        background-color:$subColor;
+        padding-top: 40px;
+        .work_wrap{
+            .work_txt{
+                padding:50px 30px;
+                span{
+                    font-size: 16px;
+                }
+                .txt_desc{
+                    font-size: 20px;
+
+                }
+            }
+    
+            .work_content{
+                >div{
+                    ul{
+                        display:block;
+                        li{
+                            width:100%;
+                            flex-wrap: wrap;
+                            .work_box{
+                                .work_con{
+                                    .work_pos{
+                                        .work_desc{
+                                            .desc_pos{
+                                                position: absolute;
+                                                bottom:30px;
+                                                .work_title{
+                                                    padding-bottom: 10px;
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
