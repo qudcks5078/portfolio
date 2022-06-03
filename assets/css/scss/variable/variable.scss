@@ -5,10 +5,13 @@ $subBgColor:#e5f6f5 !default;
 $yellowBg:#f2ee73 !default;
 
 // 폰트
-$bold:'NSG B';
-$medium:'NSG M';
-$Regular:'NSG R';
-$light:'NSG L';
+$Gbold:'NSG B';
+$Gmedium:'NSG M';
+$GRegular:'NSG R';
+$Glight:'NSG L';
+
+$Fbold:'NSF B';
+$FRegular:'NSF R';
 
 /*반응형 화면 크기*/
 $mobile: 768px;

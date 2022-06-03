@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+    <title>Index</title>
 
     <!-- 전페이지 공통 CSS -->
     <link rel="stylesheet" href="assets/css/common/common.css">
@@ -14,28 +14,24 @@
     <link rel="stylesheet" href="assets/css/scss/layout.css">
     <!-- 전페이지 공통 CSS -->
 
-    <link rel="stylesheet" href="assets/css/scss/main.css">
-
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
-    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
-    <!-- 스와이퍼 -->
-
     <!-- Material-icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Material-icon -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <script src="assets/js/lib/jquery.js"></script>
     <script src="assets/js/layout/header.js"></script>
     <script src="assets/js/layout/top.js"></script>
-
 </head>
+    <link rel="stylesheet" href="assets/css/scss/main.css">
+    
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
+    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 -->
 
 <body>
     <div id="wrap">
@@ -51,6 +47,7 @@
                 <nav>
                     <div class="nav_inner">
                         <ul class="gnb">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="work.html">Work</a></li>
                             <li><a href="board_view.html">이바닥 카운셀링</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -253,7 +250,7 @@
                         직접 상담이 필요한 경우<br class="mobile_render" />
                         canksh@kacelab.com으로 문의 주십시오.
                     </p>
-                    <a href="" class="btn btn-white">프로젝트 문의하기</a>
+                    <a href="board/board_write.html" class="btn btn-white">프로젝트 문의하기</a>
                 </div>
                 <div class="right_banner">
                     <h3>K.ACELAB Career</h3>
@@ -262,11 +259,28 @@
                         오랫동안 일 할 수 있는 환경을<br class="mobile_render" />
                         제공하자는 고민에서 출발했습니다.
                     </p>
-                    <a href="" class="btn btn-white">채용공고 확인하기</a>
+                    <a href="career.html" class="btn btn-white">채용공고 확인하기</a>
                 </div>
             </div>
 
         </section>
+
+        <script src="assets/js/layout/main.js"></script>
+        <script src="assets/js/layout/chat.js"></script>
+        <script>
+            // Swiper
+            var swiper = new Swiper(".main_visual", {
+                spaceBetween: 30,
+                autoPlay: true,
+                speed: 700,
+                effect: "fade",
+                pagination: {
+                    type: 'fraction',
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
 
         <footer>
             <div class="footer_wrap">
@@ -318,24 +332,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Swiper
-        var swiper = new Swiper(".main_visual", {
-            spaceBetween: 30,
-            autoPlay: true,
-            speed: 700,
-            effect: "fade",
-            pagination: {
-                type: 'fraction',
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-
-    <script src="assets/js/layout/main.js"></script>
-    <script src="assets/js/layout/chat.js"></script>
 </body>
-
 </html>

@@ -30,22 +30,6 @@ $(function () {
     })
   })
 
-
-  // $("#chat_input").keypress(function (e) {
-  //   if (e.keyCode == 13 && $(this).val().length) {
-  //     _val = $(this).val();
-  //     _class = $(this).attr('class');
-  //     $(this).val('');
-  //     _tar = $('.chat_wrap > ul').append('<li class="' + _class + '"><div><p class="msg">' + _val + '</p><span class="time">' + currentTime() + '</span></div></li>');
-  //     setTimeout(function () {
-  //       $('.chat_wrap > ul').find('li:last').addClass('on');
-  //     }, 10)
-  //     $('.chat_wrap').stop().animate({
-  //       scrollTop: $('.chat_wrap').height()
-  //     }, 500);
-  //   }
-  // })
-
   $("#chat_input").keypress(function (e) {
     if (e.keyCode == 13 && $(this).val().length) {
       _val = $(this).val();

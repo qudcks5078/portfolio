@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.write_section .write_wrap {
+  padding: 190px 0;
+  background-color: #e5f6f5;
+  text-align: center;
+}
+
+.write_section .write_wrap .write_txt {
+  margin-bottom: 40px;
+  font-family: "NSG L";
+}
+
+.write_section .write_wrap .write_txt h2 {
+  position: relative;
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.write_section .write_wrap .write_txt h2::after {
+  content: '';
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: #00a8a1;
+}
+
+.write_section .write_wrap .write_txt .txt_desc div {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.write_section .write_wrap .write_form {
+  width: 960px;
+  padding: 60px;
+  margin: 0 auto 150px auto;
+  background: #fff;
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.write_section .write_wrap .write_form > div .privacy_statement_box {
+  margin-top: 20px;
+  border: 1px solid #d3dadb;
+  padding: 20px 16px;
+  height: 150px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.write_section .write_wrap .write_form > div .agree_box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.write_section .write_wrap .write_form > div .agree_box input {
+  display: none;
+}
+
+.write_section .write_wrap .write_form > div .agree_box label {
+  display: inline-block;
+  border: 1px solid #d3dadb;
+  border-radius: 30px;
+  padding: 0 30px;
+  height: 48px;
+  line-height: 44px;
+  color: #d3dadb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.write_section .write_wrap .write_form > div .agree_box label span {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #d3dadb;
+  margin-right: 10px;
+  color: #d3dadb;
+}
+
+.write_section .write_wrap .write_form > div .agree_box :checked + label {
+  color: #00a8a1;
+  border: 1px solid #00a8a1;
+}
+
+.write_section .write_wrap .write_form > div .agree_box :checked + label span {
+  border: 1px solid #00a8a1;
+  color: #00a8a1;
+}
+
+.write_section .write_wrap .write_form .form_wrap form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.write_section .write_wrap .write_form .form_wrap form > div dl {
+  width: calc(50% - 30px);
+}
+
+.write_section .write_wrap .write_form .form_wrap form > div dl dd input {
+  width: 100%;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl:nth-child(2) {
+  margin-left: 60px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dt {
+  padding: 25px 0 10px 0;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd input {
+  width: 100%;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd input[type="checkbox"],
+.write_section .write_wrap .write_form .form_wrap form dl dd input[type="radio"],
+.write_section .write_wrap .write_form .form_wrap form dl dd input[type="file"] {
+  display: none;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.private_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  border: 1px solid #d3dadb;
+  height: 58px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.private_box label {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.private_box :checked + label {
+  background-color: #00a8a1;
+  color: white;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.phone_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.phone_box span {
+  padding: 0 2px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.pw_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.pw_box input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: calc(50% - 30px);
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.pw_box span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: calc(50% - 30px);
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 60px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.qna_box textarea {
+  background-color: #f6f6f6;
+  border: 1px solid #d3dadb;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box label {
+  display: inline-block;
+  width: 190px;
+  height: 45px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background: #6d738b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box > span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result {
+  display: none;
+  margin-top: 20px;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div {
+  display: table;
+  position: relative;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div a, .write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div a {
+  color: #00a8a1;
+  font-size: 24px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div span {
+  padding: 0 10px;
+  font-size: 18px;
+  font-family: "NSG L";
+}
+
+.write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div button {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.write_section .write_wrap .write_form .submit_area {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.write_section .write_wrap .write_form .submit_area button {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 60px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+  background: #c9c9c9;
+}
+
+.write_section .write_wrap .write_form .submit_area button:nth-child(1) {
+  background: #00a8a1;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .write_section .write_wrap {
+    padding: 95px 5%;
+  }
+  .write_section .write_wrap .write_txt h2 {
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .write_section .write_wrap .write_txt .txt_desc div {
+    font-size: 16px;
+  }
+  .write_section .write_wrap .write_form {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto 75px auto;
+  }
+  .write_section .write_wrap .write_form > div .privacy_statement_box {
+    margin-top: 20px;
+    border: 1px solid #d3dadb;
+    padding: 20px 16px;
+    height: 150px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  .write_section .write_wrap .write_form .form_wrap form > div dl {
+    width: calc(50% - 15px);
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl:nth-child(2) {
+    margin-left: 30px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box input {
+    width: calc(50% - 15px);
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box span {
+    width: calc(50% - 15px);
+    margin-left: 30px;
+  }
+  .write_section .write_wrap .write_form .submit_area {
+    margin-top: 40px;
+  }
+  .write_section .write_wrap .write_form .submit_area button {
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .write_section .write_wrap {
+    padding: 75px 15px;
+  }
+  .write_section .write_wrap .write_txt h2 {
+    position: relative;
+    font-size: 28px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .write_section .write_wrap .write_txt h2::after {
+    width: 40px;
+    height: 1px;
+  }
+  .write_section .write_wrap .write_txt .txt_desc div {
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .write_section .write_wrap .write_form > div {
+    padding: 30px 5%;
+    border-bottom: 1px solid #d3dadb;
+  }
+  .write_section .write_wrap .write_form > div .privacy_statement_box {
+    margin-top: 20px;
+    border: 1px solid #d3dadb;
+    padding: 20px 16px;
+    height: 150px;
+  }
+  .write_section .write_wrap .write_form > div .agree_box label {
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form > div .agree_box label span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form > div {
+    display: block;
+  }
+  .write_section .write_wrap .write_form .form_wrap form > div dl {
+    width: 100%;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl:nth-child(2) {
+    margin-left: 0;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd input {
+    height: 34px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.private_box {
+    height: 34px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.private_box label {
+    height: 24px;
+    line-height: 24px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box {
+    display: block;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box input {
+    width: 100%;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.pw_box span {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    margin-left: 0;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.qna_box textarea {
+    height: 250px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.file_box label {
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.file_box > span {
+    margin-top: 10px;
+    display: block;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div a {
+    font-size: 16px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div span {
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form .form_wrap form dl dd.file_box .result > div button {
+    font-size: 14px;
+  }
+  .write_section .write_wrap .write_form .submit_area button {
+    width: 120px;
+    height: 34px;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=write.css.map */

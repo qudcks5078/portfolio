@@ -14,28 +14,19 @@
     <link rel="stylesheet" href="assets/css/scss/layout.css">
     <!-- 전페이지 공통 CSS -->
 
-    <link rel="stylesheet" href="assets/css/scss/contact.css">
-
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
-    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
-    <!-- 스와이퍼 -->
-
     <!-- Material-icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Material-icon -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <script src="assets/js/lib/jquery.js"></script>
     <script src="assets/js/layout/header.js"></script>
     <script src="assets/js/layout/top.js"></script>
-
 </head>
+    <link rel="stylesheet" href="assets/css/scss/contact.css">
 
 <body>
     <div id="wrap">
@@ -51,6 +42,7 @@
                 <nav>
                     <div class="nav_inner">
                         <ul class="gnb">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="work.html">Work</a></li>
                             <li><a href="board_view.html">이바닥 카운셀링</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -231,7 +223,9 @@
                                 </div>
                                 <div class="agree_box">
                                     <input type="checkbox" id="agree_btn">
-                                    <label for="agree_btn">개인정보취급방침에 동의합니다.</label>
+                                    <label for="agree_btn">
+                                        <span class="material-icons">check</span>
+                                        개인정보취급방침에 동의합니다.</label>
                                 </div>
                                 <div class="submit_area">
                                     <button id="submit_btn">등록</button>
@@ -243,6 +237,9 @@
                 </div>
             </div>
         </section>
+
+        <script src="assets/js/layout/common.js"></script>
+        <script src="assets/js/layout/chat.js"></script>
 
         <footer>
             <div class="footer_wrap">
@@ -294,9 +291,6 @@
             </div>
         </div>
     </div>
-    
-    <script src="assets/js/layout/common.js"></script>
-    <script src="assets/js/layout/chat.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@
   color: #00a8a1;
   padding-bottom: 30px;
   font-size: 20px;
+  font-family: "NSF R";
 }
 
 .visual_section .career_wrap .career_txt .txt_desc {
@@ -93,6 +94,7 @@
 }
 
 .sub01_section .sub01_bg .sub01_txt span {
+  font-family: "NSF R";
   color: #00a8a1;
   padding-bottom: 30px;
 }
@@ -288,16 +290,17 @@
   }
 }
 
-.sub02_section {
+.sub02_section .sub02_bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f2ee73;
 }
 
-.sub02_section .left_wrap {
+.sub02_section .sub02_bg .left_wrap {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -305,26 +308,25 @@
   height: 100%;
 }
 
-.sub02_section .left_wrap .left_bg {
-  background-color: #f2ee73;
+.sub02_section .sub02_bg .left_wrap .left_box {
   height: 100%;
-  padding: 140px 0;
+  padding: 70px 0;
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos {
   height: 100%;
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos .left_txt h2 {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt h2 {
   display: inline-block;
   position: relative;
   padding-bottom: 50px;
   font-size: 34px;
   line-height: 34px;
-  font-family: "NSG M";
+  font-family: "NSF B";
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos .left_txt h2::after {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt h2::after {
   content: '';
   clear: both;
   display: block;
@@ -338,53 +340,98 @@
           transform: translateX(-50%);
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li p {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li p {
   font-size: 20px;
   padding: 30px 0 15px 0;
   font-family: "NSG M";
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li span {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li span {
   font-family: "NSG L";
   font-size: 16px;
 }
 
-.sub02_section .left_wrap .left_bg > .left_pos .left_img {
+.sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_img {
   margin-top: 60px;
 }
 
-.sub02_section .right_wrap {
+.sub02_section .sub02_bg .right_wrap {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-color: #fff;
 }
 
-.sub02_section .right_wrap .right_box {
+.sub02_section .sub02_bg .right_wrap .right_box {
   padding: 60px;
 }
 
-.sub02_section .right_wrap .right_box ul li {
+.sub02_section .sub02_bg .right_wrap .right_box ul li {
   border-top: 1px solid #dbdbdb;
   padding: 45px 0;
 }
 
-.sub02_section .right_wrap .right_box ul li:nth-child(1) {
+.sub02_section .sub02_bg .right_wrap .right_box ul li:nth-child(1) {
   border-top: none;
 }
 
-.sub02_section .right_wrap .right_box ul li .list_pos {
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos {
   text-align: right;
 }
 
-.sub02_section .right_wrap .right_box ul li .list_pos > div {
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) {
   text-align: left;
 }
 
-.sub02_section .right_wrap .right_box ul li .list_pos > div h3 {
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) h3 {
   padding-bottom: 10px;
 }
 
-.sub02_section .right_wrap .right_box ul li .list_pos button {
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result {
+  display: none;
+  margin-top: 20px;
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div {
+  display: table;
+  position: relative;
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div a, .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div a {
+  color: #00a8a1;
+  font-size: 24px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div span {
+  padding: 0 10px;
+  font-size: 18px;
+  font-family: "NSG L";
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div button {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos .file_box input[type="file"] {
+  display: none;
+}
+
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos .file_box label {
+  display: inline-block;
   border-radius: 30px;
   border: 2px solid #00a8a1;
   padding: 6px 40px;
@@ -392,54 +439,55 @@
   margin-top: 40px;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+  cursor: pointer;
 }
 
-.sub02_section .right_wrap .right_box ul li .list_pos button:hover {
+.sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos .file_box label:hover {
   background-color: #00a8a1;
   color: white;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .sub02_section {
+  .sub02_section .sub02_bg {
     display: block;
   }
-  .sub02_section .left_wrap .left_bg {
+  .sub02_section .sub02_bg .left_wrap .left_box {
     padding: 70px 0;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos {
     height: 100%;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt h2 {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt h2 {
     padding-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li p {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li p {
     font-size: 16px;
     padding: 15px 0 5px 0;
     font-family: "NSG M";
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li span {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li span {
     font-family: "NSG L";
     font-size: 14px;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_img {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_img {
     margin-top: 30px;
   }
-  .sub02_section .right_wrap .right_box {
+  .sub02_section .sub02_bg .right_wrap .right_box {
     padding: 30px;
   }
-  .sub02_section .right_wrap .right_box ul li {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li {
     padding: 30px 0;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos > div h3 {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) h3 {
     font-size: 16px;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos > div p {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) p {
     font-size: 14px;
     line-height: 24px;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos button {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos .file_box label {
     border-radius: 30px;
     border: 1px solid #00a8a1;
     padding: 6px 20px;
@@ -448,46 +496,55 @@
 }
 
 @media (max-width: 768px) {
-  .sub02_section {
+  .sub02_section .sub02_bg {
     display: block;
   }
-  .sub02_section .left_wrap .left_bg {
+  .sub02_section .sub02_bg .left_wrap .left_box {
     padding: 35px 30px;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos {
     height: 100%;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt h2 {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt h2 {
     padding-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li p {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li p {
     font-size: 16px;
     padding: 15px 0 5px 0;
     font-family: "NSG M";
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_txt ul li span {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_txt ul li span {
     font-family: "NSG L";
     font-size: 14px;
   }
-  .sub02_section .left_wrap .left_bg > .left_pos .left_img {
+  .sub02_section .sub02_bg .left_wrap .left_box > .left_pos .left_img {
     margin-top: 30px;
   }
-  .sub02_section .right_wrap .right_box {
+  .sub02_section .sub02_bg .right_wrap .right_box {
     padding: 30px;
   }
-  .sub02_section .right_wrap .right_box ul li {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li {
     padding: 15px 0;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos > div h3 {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) h3 {
     font-size: 16px;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos > div p {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div:nth-child(1) p {
     font-size: 14px;
     line-height: 24px;
   }
-  .sub02_section .right_wrap .right_box ul li .list_pos button {
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div a {
+    font-size: 16px;
+  }
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div span {
+    font-size: 14px;
+  }
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos div .result > div button {
+    font-size: 14px;
+  }
+  .sub02_section .sub02_bg .right_wrap .right_box ul li .list_pos .file_box label {
     border-radius: 30px;
     border: 1px solid #00a8a1;
     padding: 6px 20px;

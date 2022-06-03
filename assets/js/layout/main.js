@@ -4,29 +4,6 @@ $(document).ready(function(){
     let WindowWidth = $(window).width();
     let WindowInner = $(window).innerHeight();
 
-    // $(window).resize(function(){
-	// 	if(WindowWidth > 1024 ){
-	// 		let isWeb = true;
-	// 		let isMobile = false;
-	// 		$(window).resize(ResizePc);
-	// 		ResizePc();
-	// 	}else{ 
-	// 		let isWeb = false;
-	// 		let isMobile = true;
-	// 		$(window).resize(ResizeM);
-	// 		ResizeM();
-	// 	}
-	// });
-    // $(window).resize();
-
-    // // 메인 비주얼
-    // function ResizePc(){
-    //     $('.right_img').css('padding-top','0');
-    // }
-    // function ResizeM(){
-    //     $('.right_img').css('padding-top',WindowInner/2);
-    // }
-
     // Bottom Anchor
     let limenu = $('.bottom_anchor > ul > li');
     let contents = $('.sticky_section > .content');

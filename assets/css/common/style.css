@@ -30,7 +30,7 @@
 
 @font-face {
 	font-family: 'NSF R'; /* 폰트 패밀리 이름 주기*/
-	src: url('../../font/NotoSerif-Regular.ttf'); /*폰트 파일 주소*/
+	src: url('../../font/NotoSerif-Regular.ttf') /*폰트 파일 주소*/
 }
 
 @font-face {

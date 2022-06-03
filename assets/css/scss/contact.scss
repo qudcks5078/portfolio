@@ -12,6 +12,7 @@
             .contact_txt{
                 color:white;
                 margin-bottom: 40px;
+                font-family: $FRegular;
                 h2{
                     position: relative;
                     font-size: 40px;
@@ -67,7 +68,6 @@
                                 }
                                 > ul{
                                     display: flex;
-                                    // flex-wrap: wrap;
                                     li{
                                         margin-right:8px;
                                         input[type="checkbox"]{
@@ -133,27 +133,30 @@
                                 display:none;
                             }
                             label{
-                                position:relative;
                                 display:inline-block;
                                 border:1px solid #d3dadb;
                                 border-radius: 30px;
-                                padding: 10px 16px 10px 50px;
+                                padding: 10px 30px;
                                 cursor: pointer;
-                                &::before{
-                                    content: '∨';
-                                    position: absolute;
-                                    left:16px;
+                                color:#d3dadb;
+                                span{
+                                    font-size: 20px;
+                                    display:inline-block;
+                                    vertical-align: middle;
                                     width:24px;
                                     height:24px;
                                     border-radius: 50%;
                                     border: 1px solid #d3dadb;
+                                    margin-right: 10px;
+                                    color:#d3dadb;
                                 }
                             }
                             :checked+label{
                                 color: $mainColor;
                                 border:1px solid $mainColor;
-                                &::before{
+                                span{
                                     border:1px solid $mainColor;
+                                    color:$mainColor;
                                 }
                             }
                         }
@@ -249,6 +252,7 @@
                         .submit_area{
                             button{
                                 height: 40px;
+                                font-size: 16px;
                             }
                         }
                     }
@@ -291,7 +295,7 @@
                         form{
                             dl{
                                 dt{
-                                    padding: 30px 0 10px 0;
+                                    padding: 25px 0 10px 0;
                                     font-size: 14px;
                                 }
                                 dd{
@@ -358,6 +362,12 @@
                             .agree_box{
                                 label{
                                     font-size: 14px;
+                                    span{
+                                        width:20px;
+                                        height:20px;
+                                        line-height: 20px;
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                             .submit_area{

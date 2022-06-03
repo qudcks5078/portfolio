@@ -6,7 +6,6 @@ $(document).ready(function(){
 
     transDiv.each(function(index){
         if (scrollPos >= ($(this).offset().top / 2 - 200)) {
-            console.log(scrollPos);
             $(this).css({
                 'transform': 'rotateX(0deg)',
                 'transform': 'translate(0px, 0px)',

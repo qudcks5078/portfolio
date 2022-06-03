@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board-Write</title>
+
+    <!-- 전페이지 공통 CSS -->
+    <link rel="stylesheet" href="../assets/css/common/common.css">
+    <link rel="stylesheet" href="../assets/css/common/button.css">
+    <link rel="stylesheet" href="../assets/css/common/style.css">
+    <link rel="stylesheet" href="../assets/css/scss/layout.css">
+    <!-- 전페이지 공통 CSS -->
+
+    <!-- Material-icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material-icon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="../assets/js/lib/jquery.js"></script>
+    <script src="../assets/js/layout/header.js"></script>
+    <script src="../assets/js/layout/top.js"></script>
+</head>
+<link rel="stylesheet" href="../assets/css/scss/board/write.css">
+
+<body>
+    <div id="wrap">
+        <header class="on">
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"></a></h1>
+                <a href="index.html" class="text_logo"><img src="../assets/img/common/text_logo.png" alt="Txtlogo"></a>
+                <button id="gnb_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <div class="nav_inner">
+                        <ul class="gnb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="board_view.html">이바닥 카운셀링</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="career.html">Career</a></li>
+                        </ul>
+                        <ul class="nav_copy">
+                            <li>서울 금천구 가산동</li>
+                            <li><a href="#;">qudcks5078@naver.com</a></li>
+                            <li>Mon-Fri: 10:00 AM – 7:00 PM</li>
+                            <li><a href="#;">TEL : 010-6625-5078</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="write_section">
+            <div class="write_wrap">
+                <div class="write_txt">
+                    <h2>이바닥 카운셀링</h2>
+                    <div class="txt_desc">
+                        <div>무엇이든 물어보세요<br class="mobile_render" /> 케이스랩 분야별 실무자가 답변해드립니다.</div>
+                        <div>공개/비공개 설정할 수 있으며<br class="mobile_render" /> 비공개 글 열람은 작성 시<br class="mobile_render"/> 비밀번호가 필요합니다.</div>
+                    </div>
+                </div>
+                <div class="write_form">
+                    <div>
+                        <div class="privacy_statement_box">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut magni possimus dolor vel
+                            repellat, facere temporibus ex, autem illum assumenda at fugiat unde excepturi molestias
+                            nostrum aperiam quod, eum quae sapiente. Eaque magnam ea, voluptatum libero blanditiis
+                            fugit vel laboriosam praesentium corporis incidunt consectetur voluptatibus delectus
+                            saepe, reiciendis sunt harum unde quo facere expedita? Possimus, sunt, soluta veritatis
+                            ullam laudantium assumenda nobis amet eveniet excepturi saepe iure hic error ipsam
+                            tempore vitae adipisci quod eius consectetur? Nostrum, vitae! Fugiat, facilis.
+                        </div>
+                        <div class="agree_box">
+                            <input type="checkbox" id="agree_btn">
+                            <label for="agree_btn">
+                                <span class="material-icons">check</span>
+                                개인정보취급방침에 동의합니다.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_wrap">
+                        <form action="">
+                            <div>
+                                <dl>
+                                    <dt>작성자</dt>
+                                    <dd><input type="text" placeholder="홍길동"></dd>
+                                </dl>
+
+                                <dl>
+                                    <dt>공개여부</dt>
+                                    <dd class="private_box">
+                                        <input type="radio" id="on_chk" name="private" checked>
+                                        <label for="on_chk">공개</label>
+                                        <input type="radio" id="no_chk" name="private">
+                                        <label for="no_chk">비공개</label>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <dt>연락처</dt>
+                                    <dd class="phone_box">
+                                        <input type="text" placeholder="010">
+                                        <span>-</span> 
+                                        <input type="text" placeholder="1234">
+                                        <span>-</span> 
+                                        <input type="text" placeholder="5678">
+                                    </dd>
+                                </dl>
+
+                                <dl class="email_box">
+                                    <dt>이메일</dt>
+                                    <dd><input type="email" placeholder="qudcks5078@naver.com"></dd>
+                                </dl>
+                            </div>
+
+                            <dl>
+                                <dt>제목</dt>
+                                <dd>
+                                    <input type="text" placeholder="제목을 입력해주세요.">
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd class="pw_box">
+                                    <input type="text" placeholder="비밀번호를 입력해주세요.">
+                                    <span>* 비밀번호를 입력하셔야 글쓰기, 삭제가 가능합니다.</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>부담없이 물어보기</dt>
+                                <dd class="qna_box">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>첨부파일</dt>
+                                <dd class="file_box">
+                                    <input type="file" id="add_file">
+                                    <label for="add_file">파일첨부</label>
+                                    <span>* 이미지 파일은 JPG또는 GIF 파일로 올려주시기 바랍니다.</span>
+                                    <div class="result">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </form>
+                        <div class="submit_area">
+                            <button id="submit_btn">등록</button>
+                            <button id="cancle_btn">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="../assets/js/plugin/jquery.nice-select.js"></script>
+        <script src="../assets/js/layout/board.js"></script>
+        <script src="../assets/js/layout/chat.js"></script>
+        <script src="../assets/js/layout/common.js"></script>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="address">
+                    <ul>
+                        <li>사업자등록번호 : 679-01-01646</li>
+                        <li>서울 강남구 삼성로 763,<br class="mobile_render" /> 3층 301호 (청담동, 금탁프라자)</li>
+                        <li><a href="#;">qudcks5078@naver.com</a></li>
+                        <li>Mon-Fri : 09:00 AM – 6:00 PM</li>
+                        <li><a href="#;">TEL : 02-3442-2003</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    © Copyright 2022 Lsj1993 All Rights Reserved
+                </div>
+            </div>
+        </footer>
+
+        <div id="top_area">
+            <button class="material-icons" id="send_btn">contact_support</button>
+            <button class="material-icons" id="top_btn">north</button>
+        </div>
+
+        <div id="live_chat">
+            <a id="chat_close" class="material-icons">close</a>
+            <div class="chat_wrap">
+                <ul>
+                    <li class="you on">
+                        <div>
+                            <p class="msg">문의사항을 남겨주세요</p>
+                            <span class="time">
+                                <script>
+                                    var date = new Date();
+                                    var hh = date.getHours();
+                                    var mm = date.getMinutes();
+                                    var apm = hh > 12 ? "오후" : "오전";
+                                    var ct = apm + " " + hh + ":" + mm + "";
+                                    document.write(ct);
+                                </script>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="submit_chat">
+                <input type="text" id="chat_input" class="me" placeholder=" 메시지를 입력해주세요" />
+                <button id="chat_submit">확인</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

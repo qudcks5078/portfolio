@@ -321,6 +321,22 @@
   color: #00a8a1;
 }
 
+.board_wrap .table_wrap .board_btn_area {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.board_wrap .table_wrap .board_btn_area a {
+  display: inline-block;
+  border: 1px solid #d3dadb;
+  padding: 8px 16px;
+}
+
+.board_wrap .table_wrap .board_btn_area a:hover {
+  background-color: #00a8a1;
+  color: white;
+}
+
 .board_wrap .table_wrap .table_pagination {
   margin-top: 40px;
   text-align: center;

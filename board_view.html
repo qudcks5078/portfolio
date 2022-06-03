@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>board</title>
+    <title>Board</title>
 
     <!-- 전페이지 공통 CSS -->
     <link rel="stylesheet" href="assets/css/common/common.css">
@@ -14,30 +14,20 @@
     <link rel="stylesheet" href="assets/css/scss/layout.css">
     <!-- 전페이지 공통 CSS -->
 
-    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
-    <link rel="stylesheet" href="assets/css/scss/board.css">
-
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
-    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
-    <!-- 스와이퍼 -->
-
     <!-- Material-icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Material-icon -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <script src="assets/js/lib/jquery.js"></script>
-    <script src="assets/js/plugin/jquery.nice-select.js"></script>
     <script src="assets/js/layout/header.js"></script>
     <script src="assets/js/layout/top.js"></script>
-
 </head>
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/scss/board.css">
 
 <body>
     <div id="wrap">
@@ -53,6 +43,7 @@
                 <nav>
                     <div class="nav_inner">
                         <ul class="gnb">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="work.html">Work</a></li>
                             <li><a href="board_view.html">이바닥 카운셀링</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -201,16 +192,26 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="board_btn_area">
+                        <a href="./board/board_write.html">글쓰기</a>
+                        <a>삭제</a>
+                    </div>
                     <div class="table_pagination">
-                        <a href="#;" class="material-icons">&lt;&lt;</a>
-                        <a href="#;" class="material-icons">이전</a>
+                        <a href="#;" class="material-icons">keyboard_arrow_left</a>
                         <a href="#;" class="on">1</a>
-                        <a href="#;" class="material-icons">다음</a>
-                        <a href="#;" class="material-icons">&gt;&gt;</a>
+                        <a href="#;" class="">2</a>
+                        <a href="#;" class="">3</a>
+                        <a href="#;" class="">4</a>
+                        <a href="#;" class="">5</a>
+                        <a href="#;" class="material-icons">chevron_right</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script src="assets/js/plugin/jquery.nice-select.js"></script>
+        <script src="assets/js/layout/board.js"></script>
+        <script src="assets/js/layout/chat.js"></script>
 
         <footer>
             <div class="footer_wrap">
@@ -262,10 +263,6 @@
             </div>
         </div>
     </div>
-
-
-    <script src="assets/js/layout/board.js"></script>
-    <script src="assets/js/layout/chat.js"></script>
 </body>
 
 </html>

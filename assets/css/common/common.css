@@ -13,9 +13,6 @@ textarea {width:100%; border:none; font-size: 16px; font-family: 'NSG R' !import
 a {text-decoration: none; color:#000;}
 a, span {display:inline-block;}
 p {margin:0; padding:0;}
-a, span, p {word-break: break-all;}
+a, span, p {word-break: break-all; letter-spacing: -0.2px;}
 a, button, span, input, ul, li, div {-webkit-tap-highlight-color : transparent; }
 table {border-spacing: 0; border-collapse:collapse; table-layout: fixed;}
-.nice-select{
-    border: 1px solid red;
-}

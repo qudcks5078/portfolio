@@ -292,6 +292,19 @@
                 }
             }
         }
+        .board_btn_area{
+            text-align: right;
+            margin-top: 20px;
+            a{
+                display:inline-block;
+                border:1px solid #d3dadb;
+                padding:8px 16px;
+                &:hover{
+                    background-color: $mainColor;
+                    color:white;
+                }
+            }
+        }
         .table_pagination{
             margin-top: 40px;
             text-align: center;

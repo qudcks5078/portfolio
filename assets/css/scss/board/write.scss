@@ -1,0 +1,444 @@
+@import '../variable/variable.scss';
+
+.write_section{
+    .write_wrap{
+        padding:190px 0;
+        background-color:#e5f6f5;
+        text-align: center;
+        .write_txt{
+            margin-bottom: 40px;
+            font-family: $Glight;
+            h2{
+                position: relative;
+                font-size: 40px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                    position: absolute;
+                    left:50%; bottom:0;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 2px;
+                    background-color:$mainColor;
+                }
+            }
+            .txt_desc{
+                div{
+                    position: relative;
+                    top:30px;
+                    opacity: 0;
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+            }
+        }
+        .write_form{
+            width: 960px;
+            padding: 60px;
+            margin: 0 auto 150px auto;
+            background: #fff;
+            font-size: 16px;
+            text-align: left;
+            color: #333;
+            font-weight: 300;
+            box-sizing: border-box;
+            > div{
+                .privacy_statement_box{
+                    margin-top: 20px;
+                    border: 1px solid #d3dadb;
+                    padding: 20px 16px;
+                    height: 150px;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    overflow-y: scroll;
+                }
+                .agree_box{
+                    margin-top: 20px;
+                    text-align: center;
+                    input{
+                        display:none;
+                    }
+                    label{
+                        display:inline-block;
+                        border:1px solid #d3dadb;
+                        border-radius: 30px;
+                        padding: 0 30px;
+                        height:48px;
+                        line-height: 44px;
+                        color:#d3dadb;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        span{
+                            font-size: 20px;
+                            display:inline-block;
+                            vertical-align: middle;
+                            width:24px;
+                            height:24px;
+                            border-radius: 50%;
+                            border: 1px solid #d3dadb;
+                            margin-right: 10px;
+                            color:#d3dadb;
+                        }
+                    }
+                    :checked+label{
+                        color: $mainColor;
+                        border:1px solid $mainColor;
+                        span{
+                            border:1px solid $mainColor;
+                            color:$mainColor;
+                        }
+                    }
+                }
+            }
+            .form_wrap{
+                form{
+                    >div{
+                        display:flex;
+                        dl{
+                            width:calc(50% - 30px);
+                            dt{}
+                            dd{
+                                input{width: 100%;}
+                                label{}
+                            }
+                        }
+                    }
+                    dl{
+                        &:nth-child(2){
+                            margin-left: 60px;
+                        }
+                        dt{padding: 25px 0 10px 0;}
+                        dd{
+                            input{width:100%;}
+                            input[type="checkbox"],
+                            input[type="radio"],
+                            input[type="file"]{display:none;}
+
+                            &.private_box{
+                                display:flex;
+                                align-items: center;
+                                background-color:#f6f6f6;
+                                border:1px solid #d3dadb;
+                                height:58px;
+                                box-sizing: border-box;
+                                border-radius: 5px;
+                                padding:0 5px;
+                                label{
+                                    width:50%;
+                                    height: 45px;
+                                    line-height: 45px;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+                                :checked+label{
+                                    background-color: $mainColor;
+                                    color:white;
+                                }
+                            }
+                            &.phone_box{
+                                display:flex;
+                                align-items: center;
+                                span{
+                                    padding:0 2px;
+                                }
+                            }
+                            &.pw_box{
+                                display:flex;
+                                align-items: center;
+                                input{
+                                    flex:1;
+                                    width:calc(50% - 30px);
+                                }
+                                span{
+                                    flex:1;
+                                    width:calc(50% - 30px);
+                                    display:inline-block;
+                                    font-size: 13px;
+                                    margin-left: 60px;
+                                }
+                            }
+                            &.qna_box{
+                                textarea{
+                                    background-color: #f6f6f6;
+                                    border: 1px solid #d3dadb;
+                                }
+                            }
+                            &.file_box{
+                                label{
+                                    display:inline-block;
+                                    width: 190px;
+                                    height: 45px;
+                                    line-height: 44px;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    color: #fff;
+                                    background: #6d738b;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                }
+                                > span{
+                                    margin-left:20px;
+                                    font-size: 16px;
+                                }
+                                .result{
+                                    display: none;
+                                    margin-top: 20px;
+                                    > div{
+                                        display: table;
+                                        position: relative;
+                                        a,span{
+                                            display:table-cell;
+                                            vertical-align: middle;
+                                        }
+                                        a{
+                                            color:$mainColor;
+                                            font-size: 24px;
+                                            transform: rotate(-45deg);
+                                        }
+                                    span{
+                                        padding: 0 10px;
+                                        font-size: 18px;
+                                        font-family: $Glight;
+                                    }
+                                    button{
+                                        position: absolute;
+                                        left: 100%; top: 50%;
+                                        transform: translateY(-50%);
+                                        font-size: 18px;
+                                        border-radius: 50%;
+                                        font-weight: 700;
+                                    }
+                                }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .submit_area{
+                text-align: center;
+                margin-top:80px;
+                button{
+                    display: inline-block;
+                    width: 240px;
+                    height: 60px;
+                    margin: 0 10px;
+                    border-radius: 60px;
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: normal;
+                    background: #c9c9c9;
+                    &:nth-child(1){
+                        background:$mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .write_section{
+        .write_wrap{
+            padding:95px 5%;
+            .write_txt{
+                h2{
+                    position: relative;
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+                .txt_desc{
+                    div{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .write_form{
+                width: 100%;
+                padding: 30px;
+                margin: 0 auto 75px auto;
+                > div{
+                    .privacy_statement_box{
+                        margin-top: 20px;
+                        border: 1px solid #d3dadb;
+                        padding: 20px 16px;
+                        height: 150px;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        overflow-y: scroll;
+                    }
+                }
+                .form_wrap{
+                    form{
+                        >div{
+                            dl{
+                                width:calc(50% - 15px);
+                            }
+                        }
+                        dl{
+                            &:nth-child(2){
+                                margin-left: 30px;
+                            }
+                            dd{
+                                &.pw_box{
+                                    display:flex;
+                                    align-items: center;
+                                    input{
+                                        width:calc(50% - 15px);
+                                    }
+                                    span{
+                                        width:calc(50% - 15px);
+                                        margin-left: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .submit_area{
+                    margin-top:40px;
+                    button{
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile{
+    .write_section{
+        .write_wrap{
+            padding:75px 15px;
+            .write_txt{
+                h2{
+                    position: relative;
+                    font-size: 28px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    &::after{
+                        width: 40px;
+                        height: 1px;
+                    }
+                }
+                .txt_desc{
+                    div{
+                    font-size: 14px;
+                }
+                }
+            }
+            .write_form{
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                font-size: 12px;
+                > div{
+                    padding:30px 5%;
+                    border-bottom: 1px solid #d3dadb;
+                    .privacy_statement_box{
+                        margin-top: 20px;
+                        border: 1px solid #d3dadb;
+                        padding: 20px 16px;
+                        height: 150px;
+                    }
+                    .agree_box{
+                        label{
+                            font-size: 14px;
+                            span{
+                                width:20px;
+                                height:20px;
+                                line-height: 20px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .form_wrap{
+                    form{
+                        >div{
+                            display:block;
+                            dl{
+                                width:100%;
+                            }
+                        }
+                        dl{
+                            &:nth-child(2){
+                                margin-left: 0;
+                            }
+                            dd{
+                                input{
+                                    height:34px;
+                                }
+                                &.private_box{
+                                    height:34px;
+                                    label{
+                                        height: 24px;
+                                        line-height: 24px;
+                                    }
+                                }
+                                &.pw_box{
+                                    display:block;
+                                    input{
+                                        width:100%;
+                                    }
+                                    span{
+                                        margin-top: 10px;
+                                        display:block;
+                                        width:100%;
+                                        font-size: 13px;
+                                        margin-left: 0;
+                                    }
+                                }
+                                &.qna_box{
+                                    textarea{
+                                        height: 250px;
+                                    }
+                                }
+                                &.file_box{
+                                    label{
+                                        width: 120px;
+                                        height: 34px;
+                                        line-height: 34px;
+                                        font-size: 14px;
+                                    }
+                                    > span{
+                                        margin-top: 10px;
+                                        display:block;
+                                        margin-left:0px;
+                                        font-size: 12px;
+                                    }
+                                    .result{
+                                        > div{
+                                            a{
+                                                font-size: 16px;
+                                            }
+                                        span{
+                                            font-size: 14px;
+                                        }
+                                        button{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .submit_area{
+                    button{
+                        width: 120px;
+                        height: 34px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
